@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Pipe Wall Thickness</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_f101">F101</string>
+    <string name="PG">Pipeline Geometry</string>
+    <string name="OD">Outer Diameter</string>
+    <string name="CA">Corrosion Allowance</string>
+    <string name="PP">Pipe Process</string>
+    <string name="DP">Design Pressure</string>
+    <string name="DT">Design Temperature</string>
+    <string name="IT">Installation Temperature</string>
+    <string name="LAT">Reference Elevation</string>
+    <string name="Density">Product Density</string>
+    <string name="pressureRatio">Design Pressure Ratio</string>
+    <string name="proButton">Confirm Process Information</string>
+    <string name="classification">Location and Fluid Classification</string>
+    <string name="FC">Fluid Class</string>
+    <string name="LC">Location Class</string>
+    <string name="Env">Environmental Parameters</string>
+    <string name="wDens">Water Density</string>
+    <string name="WDmin">Min Water Depth</string>
+    <string name="WDmax">Max Water Depth</string>
+    <string name="hTide">Max Tide</string>
+    <string name="hMax">Maximum Wave Height</string>
+    <string name="envButton">Confirm Environmental Information</string>
+    <string name="WT">Selected Wall Thickness</string>
+    <string name="WTC">Calculated Wall Thickness</string>
+    <string name="WTButton">Calculate Wall Thickness</string>
+    <string name="report">The minimum wall thickness for pressure containment is %1$.2fmm, collapse is %2$.2fmm, and propagating buckle is %3$.2fmm</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gibson.wallthickness">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Home Directory select the appropriate design code here -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- DNV OS F101 wall thickness design -->
+        <activity
+            android:name=".F101"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".F101_3"
+            android:parentActivityName=".F101" />
+        <activity
+            android:name=".F101_4"
+            android:parentActivityName=".F101_3" />
+        <activity
+            android:name=".F101_5"
+            android:parentActivityName=".F101_4"/>
+    </application>
+
+</manifest>

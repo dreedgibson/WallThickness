@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="OD_items">
+        <item>in</item>
+        <item>mm</item>
+    </string-array>
+    <string-array name="process_items">
+        <item>UOE</item>
+        <item>UO, TRB, or ERW</item>
+        <item>Seamless</item>
+    </string-array>
+    <string-array name="pipe_items">
+        <item>Seamless</item>
+        <item>HFW, EBW, LWB, or MW</item>
+        <item>SAW</item>
+    </string-array>
+    <string-array name="mat_items">
+        <item>CS X52</item>
+        <item>CS X60</item>
+        <item>CS X65</item>
+        <item>CS X70</item>
+        <item>22% Cr Duplex</item>
+        <item>15% Cr Super Duplex</item>
+        <item>13% Cr</item>
+    </string-array>
+    <string-array name="pressure_items">
+        <item>MPa</item>
+        <item>barg</item>
+        <item>psi</item>
+    </string-array>
+    <string-array name="temp_items">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+    <string-array name="el_items">
+        <item>m</item>
+        <item>ft</item>
+    </string-array>
+    <string-array name="dens_items">
+        <item>kg/m^3</item>
+        <item>lb/ft^3</item>
+    </string-array>
+    <string-array name="FC">
+        <item name="A">A - non-flammable</item>
+        <item name="B">B - production fluids</item>
+        <item name="C">C - Non-flammable Gas</item>
+        <item name="D">D - single phase Gas</item>
+        <item name="E">E - liquified flammable gas</item>
+    </string-array>
+    <string-array name="LC">
+        <item>1 - no frequent human activity</item>
+        <item>2a - pipeline near platform</item>
+        <item>2b - riser</item>
+    </string-array>
+
+</resources>

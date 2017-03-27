@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_f101_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="gibson.wallthickness.F101_4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/classification"
+        android:id="@+id/classification"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:text="@string/FC"
+        android:ems="10"
+        android:id="@+id/FC"
+        android:gravity="center_vertical"
+        android:layout_below="@id/classification" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/FCSpin"
+        android:entries="@array/FC"
+        android:layout_below="@+id/classification"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:text="@string/LC"
+        android:ems="10"
+        android:id="@+id/LC"
+        android:gravity="center_vertical"
+        android:layout_below="@id/FC" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/LCSpin"
+        android:entries="@array/LC"
+        android:layout_below="@+id/FCSpin"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Env"
+        android:id="@+id/Env"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/LC"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/wDens"
+        android:layout_below="@+id/Env"
+        android:hint="@string/wDens"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/wDensSpin"
+        android:entries="@array/dens_items"
+        android:layout_below="@+id/Env"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/WDmin"
+        android:layout_below="@+id/wDens"
+        android:hint="@string/WDmin"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/minWDSpin"
+        android:entries="@array/el_items"
+        android:layout_below="@+id/wDensSpin"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/WDmax"
+        android:layout_below="@+id/WDmin"
+        android:hint="@string/WDmax"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/maxWDSpin"
+        android:entries="@array/el_items"
+        android:layout_below="@+id/minWDSpin"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/hTide"
+        android:layout_below="@+id/WDmax"
+        android:hint="@string/hTide"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/tideSpin"
+        android:entries="@array/el_items"
+        android:layout_below="@+id/maxWDSpin"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/hMax"
+        android:layout_below="@+id/hTide"
+        android:hint="@string/hMax"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/waveHeightSpin"
+        android:entries="@array/el_items"
+        android:layout_below="@+id/tideSpin"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme.Spinner"/>
+
+    <Button
+        android:text="@string/envButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hMax"
+        android:layout_marginTop="34dp"
+        android:id="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="onEnvButtonClick"/>
+</RelativeLayout>
